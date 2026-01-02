@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="google-adsense-account" content="ca-pub-7750291789443147">  
+  <meta name="google-site-verification" content="wjXL_0hMn3AOHTuL08Cjw0sr4Y8G222R3JuuA5zKINc" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Simple Focus Timer | Free Online Timer</title>
+  <meta name="description" content="A simple online focus timer to manage work and break time. No login, no installation." />
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7750291789443147"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>Simple Focus Timer</h1>
+
+    <p class="desc">
+      A free online timer to help you stay focused and manage your time.<br>
+      No login. No installation. Just start and focus.
+    </p>
+
+    <!-- ✅ Timer Area -->
+    <div class="timer-layout">
+      <div class="timer-wrapper">
+
+        <div class="minute-wheel-box">
+          <div class="minute-wheel-label">Focus Time</div>
+          <select id="minuteWheel" class="minute-wheel-top" onchange="onWheelChange()">
+            <option value="5">5 min</option>
+            <option value="10">10 min</option>
+            <option value="15">15 min</option>
+            <option value="20">20 min</option>
+            <option value="25">25 min</option>
+            <option value="30">30 min</option>
+            <option value="35">35 min</option>
+            <option value="40">40 min</option>
+            <option value="45">45 min</option>
+            <option value="50" selected>50 min</option>
+          </select>
+        </div>
+
+        <canvas id="progressCanvas" width="300" height="300"></canvas>
+        <div id="timeText">50:00</div>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button id="startBtn" onclick="handleStart()">Start Focus</button>
+      <button id="pauseBtn" onclick="togglePause()">Pause</button>
+    </div>
+
+    <div class="buttons share-row">
+      <button onclick="shareToday()">Share Today’s Progress</button>
+    </div>
+
+    <ul id="logList"></ul>
+
+    <!-- ✅ Content Section (for SEO & AdSense) -->
+    <section class="content-section">
+
+      <h2>What is a Focus Timer?</h2>
+      <p>
+        This focus timer is a simple online tool designed to help you concentrate on one task at a time.
+        Many people plan their day with good intentions, but distractions often interrupt focus.
+        This timer removes unnecessary features and helps you commit to a single focus session.
+        You can use it directly in your browser without creating an account or installing anything.
+      </p>
+
+      <h2>Why use time-based focus sessions?</h2>
+      <p>
+        Human concentration is limited.
+        Long, uninterrupted work without breaks can reduce productivity and increase fatigue.
+        Time-based focus sessions help maintain a steady rhythm and encourage sustainable work habits.
+        This timer supports a balanced approach to focus and rest.
+      </p>
+
+      <!-- ✅ Ad must be inside content -->
+      <ins class="adsbygoogle"
+        style="display:block; margin: 24px 0;"
+        data-ad-client="ca-pub-7750291789443147"
+        data-ad-slot="여기에_내_광고슬롯_ID"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+
+      <h2>How to use</h2>
+      <p>
+        Select your desired focus time and start the timer.
+        During the session, focus on a single task and avoid distractions.
+        When the timer ends, take a short break before starting your next session.
+      </p>
+
+      <h2>Tips for better focus</h2>
+      <p>
+        Turn off unnecessary notifications during focus sessions.
+        Set one clear goal per session instead of multitasking.
+        Consistent repetition is more effective than overly ambitious schedules.
+      </p>
+
+    </section>
+
+    <footer class="site-footer">
+      <p>
+        <a href="../about.html">About</a> ·
+        <a href="../privacy.html">Privacy Policy</a>
+      </p>
+      <p class="copyright">
+        © 2025 gwanoove. All rights reserved.
+      </p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
